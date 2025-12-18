@@ -60,8 +60,6 @@ We implement 10+ algorithms to demonstrate conflicting solving strategies.
 
 ## 🛠️ Installation
 
-## 🛠️ Installation
-
 ### Prerequisites
 *   **Python**: Version **3.10** or higher is recommended.
 *   **GPU Drivers** (Optional): For high-performance rendering (Taichi), ensure your NVIDIA/AMD drivers are up to date.
