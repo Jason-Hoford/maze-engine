@@ -1,0 +1,8 @@
+pygame>=2.5.0
+taichi>=1.7.0
+opencv-python
+numpy
+pandas
+seaborn
+matplotlib
+pytest
