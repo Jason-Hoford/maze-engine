@@ -360,7 +360,7 @@ graph TD
     A[Start] --> B{Can Move?}
     B -- Yes --> C[Carve & Push to Stack]
     C --> B
-    B -- No --> D[Pop Stack (Backtrack)]
+    B -- No --> D["Pop Stack (Backtrack)"]
     D --> B
 ```
 
