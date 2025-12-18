@@ -1,5 +1,8 @@
 # Maze Engine (High-Performance Python Maze System)
 
+
+![Hero: Bi-Directional A* Solving 20k x 20k Maze](docs/hero_biastar_20k.gif)
+
 **Maze Engine** is a state-of-the-art maze generation and solving system engineered in Python. It proves that Python can handle massive procedural generation tasks (up to **400 Million Cells**) given the right data structures and GPU acceleration.
 
 > **Performance**: Generates a 5,000 x 5,000 maze (25M cells) in seconds. Solves it in real-time using GPU-accelerated visualization.
