@@ -60,33 +60,45 @@ We implement 10+ algorithms to demonstrate conflicting solving strategies.
 
 ## 🛠️ Installation
 
+## 🛠️ Installation
+
+### Prerequisites
+*   **Python**: Version **3.10** or higher is recommended.
+*   **GPU Drivers** (Optional): For high-performance rendering (Taichi), ensure your NVIDIA/AMD drivers are up to date.
+
+### Fast Setup
+We recommend using a virtual environment to keep dependencies clean.
+
 ```bash
-# Clone
-git clone https://github.com/your-repo/maze-engine.git
+# 1. Clone the repository
+git clone https://github.com/Jason-Hoford/maze-engine.git
 cd maze-engine
 
-# Install Dependencies (Pygame, Taichi, Numpy, Pandas, Matplotlib)
-# Install Dependencies (Pygame, Taichi, Numpy, Pandas, Matplotlib)
+# 2. Create Virtual Environment (Optional but Recommended)
+python -m venv venv
+# Windows:
+.\venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+
+# 3. Install Dependencies
 pip install -r requirements.txt
 ```
 
 ## 🧪 Testing
 
-The engine includes a comprehensive test suite covering algorithms, grid logic, and GPU integration.
+The engine ships with a robust test suite powered by `pytest`.
 
 ```bash
-# Option 1: Using Pytest (Recommended)
+# Run the full test suite
 pytest tests/
-
-# Option 2: Using Built-in Unittest
-python -m unittest discover tests
 ```
 
-**What is tested?**
-*   **Algorithms**: DFS, Prim, Solvers ensure correct output.
-*   **Grid**: Memory safety, wall logic, and bit-operations.
-*   **GPU**: Verifies Taichi kernel compilation and rendering pipeline.
-*   **IO**: Files are saved/loaded correctly (Compression & Meta).
+**Coverage:**
+*   **✅ Core Logic**: Verifies bit-level operations and strict maze definitions (Perfect Maze properties).
+*   **✅ Algorithms**: Validates that Solvers find correct paths and Generators produce solvable mazes.
+*   **✅ GPU Integration**: Auto-detects available hardware and verifies the Taichi compute pipeline.
+*   **✅ IO System**: Tests compression, serialization, and metadata integrity.
 
 ---
 
